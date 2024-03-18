@@ -10,7 +10,8 @@ public class SceneManager {
   public enum Scenes {
     LOGIN,
     CLIENT,
-    ADMIN
+    ADMIN,
+    HI
   }
 
 

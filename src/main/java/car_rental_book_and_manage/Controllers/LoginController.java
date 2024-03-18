@@ -17,6 +17,6 @@ public class LoginController extends Controller{
 
   @FXML
   void onLogIn(MouseEvent event) {
-    App.setUi(Scenes.ADMIN);
+    App.setUi(Scenes.HI);
   }
 }

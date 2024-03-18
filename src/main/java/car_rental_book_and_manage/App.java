@@ -21,6 +21,9 @@ public class App extends Application {
   public void start(Stage stage) throws IOException {
     SceneManager.addController(SceneManager.Scenes.LOGIN, null);
     SceneManager.addUi(SceneManager.Scenes.LOGIN, loadFXML("login"));
+
+    SceneManager.addController(SceneManager.Scenes.HI, null);
+    SceneManager.addUi(SceneManager.Scenes.HI, loadFXML("hi"));
     
     
     Parent root = SceneManager.getUiRoot(Scenes.LOGIN);

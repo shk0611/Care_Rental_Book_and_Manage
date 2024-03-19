@@ -8,6 +8,7 @@ module car_rental_book_and_manage {
     exports car_rental_book_and_manage;
     exports car_rental_book_and_manage.Controllers;
     exports car_rental_book_and_manage.Utility;
+    exports car_rental_book_and_manage.Objects;
 
     //exports car_rental_book_and_manage.Objects;
 }

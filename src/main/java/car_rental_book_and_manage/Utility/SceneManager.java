@@ -11,6 +11,7 @@ public class SceneManager {
     LOGIN,
     CLIENT,
     ADMIN,
+    SIGNUP,
   }
 
 

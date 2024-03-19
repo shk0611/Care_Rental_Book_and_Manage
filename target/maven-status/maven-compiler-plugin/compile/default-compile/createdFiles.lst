@@ -1,11 +1,14 @@
-car_rental_book_and_manage/Utility/DataAccessor.class
+car_rental_book_and_manage/Objects/Admin.class
 car_rental_book_and_manage/Utility/SceneManager$Scenes.class
-car_rental_book_and_manage/Utility/SelectUser.class
+car_rental_book_and_manage/Objects/User.class
 car_rental_book_and_manage/Utility/SceneManager.class
 car_rental_book_and_manage/Objects/DataConnector.class
+car_rental_book_and_manage/Utility/UserManager.class
+car_rental_book_and_manage/Controllers/SignUpController.class
 module-info.class
 car_rental_book_and_manage/Controllers/ClientController.class
 car_rental_book_and_manage/Controllers/AdminController.class
 car_rental_book_and_manage/Controllers/LoginController.class
 car_rental_book_and_manage/Controllers/Controller.class
+car_rental_book_and_manage/Objects/Client.class
 car_rental_book_and_manage/App.class

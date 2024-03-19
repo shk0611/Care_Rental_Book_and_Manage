@@ -55,10 +55,6 @@ public class LoginController extends Controller {
     password.setPromptText(userRole + " Password");
   }
 
-  @FXML
-  public void onLogIn(MouseEvent event) {
-    App.setUi(Scenes.HI);
-  }
 
   public void userSelect() {
 
@@ -71,4 +67,11 @@ public class LoginController extends Controller {
     ObservableList<String> dataList = FXCollections.observableArrayList(UserList);
     selectUserComboBox.setItems(dataList);
   }
+
+  @FXML
+  public void onLogIn(MouseEvent event) {
+    String selectedUser = selectUserComboBox.getSelectionModel().getSelectedItem();
+    
+  }
+
 }

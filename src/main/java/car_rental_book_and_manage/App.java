@@ -5,10 +5,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import car_rental_book_and_manage.Controllers.Controller;
+import car_rental_book_and_manage.Objects.DataConnector;
 import car_rental_book_and_manage.Utility.SceneManager;
 import car_rental_book_and_manage.Utility.SceneManager.Scenes;
 
@@ -16,14 +14,21 @@ import car_rental_book_and_manage.Utility.SceneManager.Scenes;
 public class App extends Application {
 
     private static Scene scene;
+    private DataConnector dc;
 
   @Override
   public void start(Stage stage) throws IOException {
+    // DataAccessor.getConnection();
+    dc = new DataConnector("jdbc:mysql://localhost:3306/management_booking", "root", "w4ldleeK03");
+
     SceneManager.addController(SceneManager.Scenes.LOGIN, null);
     SceneManager.addUi(SceneManager.Scenes.LOGIN, loadFXML("login"));
 
-    SceneManager.addController(SceneManager.Scenes.HI, null);
-    SceneManager.addUi(SceneManager.Scenes.HI, loadFXML("hi"));
+    SceneManager.addController(SceneManager.Scenes.CLIENT, null);
+    SceneManager.addUi(SceneManager.Scenes.CLIENT, loadFXML("client"));
+
+    SceneManager.addController(SceneManager.Scenes.ADMIN, null);
+    SceneManager.addUi(SceneManager.Scenes.ADMIN, loadFXML("admin"));
     
     
     Parent root = SceneManager.getUiRoot(Scenes.LOGIN);

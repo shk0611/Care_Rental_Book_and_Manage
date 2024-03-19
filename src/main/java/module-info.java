@@ -1,6 +1,7 @@
 module car_rental_book_and_manage {
     requires transitive javafx.controls;
     requires transitive javafx.fxml;
+    requires transitive java.sql; 
 
     opens car_rental_book_and_manage to javafx.fxml;
     opens car_rental_book_and_manage.Controllers to javafx.fxml;

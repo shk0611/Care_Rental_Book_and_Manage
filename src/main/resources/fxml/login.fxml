@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_rental_book_and_manage.Controllers.LoginController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_rental_book_and_manage.Controllers.LoginController">
    <children>
-      <Button fx:id="loginBtn" layoutX="273.0" layoutY="140.0" mnemonicParsing="false" onMouseClicked="#onLogIn" text="Button" />
-      <Label layoutX="164.0" layoutY="47.0" text="hi" />
+      <AnchorPane layoutX="497.0" prefHeight="600.0" prefWidth="404.0">
+         <children>
+            <Button fx:id="loginBtn" layoutX="178.0" layoutY="224.0" mnemonicParsing="false" onMouseClicked="#onLogIn" text="Login" />
+            <Label layoutX="136.0" layoutY="41.0" text="Sign into your account" />
+            <TextField fx:id="username" layoutX="122.0" layoutY="144.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="123.0" layoutY="178.0" promptText="Password" />
+            <ComboBox fx:id="selectUserComboBox" layoutX="100.0" layoutY="72.0" onAction="#switchLoginPortal" prefHeight="33.0" prefWidth="207.0" promptText="Select User" />
+            <Button fx:id="signUpBtn" layoutX="176.0" layoutY="448.0" mnemonicParsing="false" text="SIgn up" />
+            <Label layoutX="143.0" layoutY="415.0" text="Don't have an account?" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="104.0" layoutY="73.0" text="Car_Rental">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

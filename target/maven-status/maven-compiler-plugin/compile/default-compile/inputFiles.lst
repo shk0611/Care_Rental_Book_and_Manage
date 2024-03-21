@@ -1,13 +1,13 @@
-/Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Objects/DataConnector.java
-/Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Objects/Admin.java
+/Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Utility/AlertManager.java
+/Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Utility/DataManager.java
 /Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Controllers/SignUpController.java
+/Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Objects/ClientDB.java
 /Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Controllers/LoginController.java
 /Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Utility/SceneManager.java
 /Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Controllers/AdminController.java
 /Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/App.java
+/Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Objects/ClientDAO.java
 /Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Objects/Client.java
 /Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Controllers/Controller.java
 /Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/module-info.java
-/Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Objects/User.java
 /Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Controllers/ClientController.java
-/Users/andrewshin/Desktop/car_rental_book_and_manage/src/main/java/car_rental_book_and_manage/Utility/UserManager.java

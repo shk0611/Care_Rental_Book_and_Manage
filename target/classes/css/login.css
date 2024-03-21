@@ -1,0 +1,39 @@
+
+.anchor-pane{
+    -fx-background-color: rgb(136, 118, 203);
+}
+
+.user-fields{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.button{
+    -fx-background-color: rgb(236, 214, 44);
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: rgb(217, 196, 33);
+    -fx-cursor:hand;
+}
+
+.button:pressed {
+    -fx-background-color: rgb(236, 214, 44);
+}
+
+.custom-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgb(28, 102, 205);
+}
+
+.custom-button:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgb(104, 155, 227);
+}
+
+.custom-button:pressed {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgb(28, 102, 205);
+}

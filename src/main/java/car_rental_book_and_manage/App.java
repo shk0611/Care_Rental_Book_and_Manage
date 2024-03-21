@@ -1,9 +1,11 @@
 package car_rental_book_and_manage;
 
-import car_rental_book_and_manage.Objects.DataConnector;
+import car_rental_book_and_manage.Objects.Client;
+import car_rental_book_and_manage.Objects.ClientDB;
 import car_rental_book_and_manage.Utility.SceneManager;
 import car_rental_book_and_manage.Utility.SceneManager.Scenes;
 import java.io.IOException;
+import java.util.List;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,17 +17,18 @@ import javafx.stage.Stage;
 public class App extends Application {
 
   private static Scene scene;
-  private static DataConnector dc = new DataConnector("jdbc:mysql://localhost:3306/management_booking", "root", "w4ldleeK03");
+  public static List<Client> clientList;
 
-  public static DataConnector getDataConnector() {
-    return dc;
+  public static List<Client> getClientList() {
+    return clientList;
   }
-      
-  
 
   @Override
   public void start(Stage stage) throws IOException {
-    dc.connect();
+
+    ClientDB clientDb = new ClientDB();
+    clientList = clientDb.retrieveAllClients();
+
     SceneManager.addController(SceneManager.Scenes.LOGIN, null);
     SceneManager.addUi(SceneManager.Scenes.LOGIN, loadFXML("login"));
 
